@@ -692,7 +692,7 @@ body.dark-mode .theme-toggle{
 
 .calculadora{
     padding:100px 80px;
-    background:#F8FAFC;
+    background: #FAF9F6;
 }
 
 .calculadora-container{
@@ -806,8 +806,8 @@ body.dark-mode .theme-toggle{
 .resultado{
     display:grid;
     grid-template-columns:1fr 1fr;
-    gap:18px;
-    margin-top:35px;
+    gap: 15px;
+    margin-top:25px;
 }
 
 .resultado-item{
@@ -825,8 +825,9 @@ body.dark-mode .theme-toggle{
 }
 
 .resultado-item strong{
-    font-size:28px;
-    color:#020617;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.2;
 }
 
 .destaque{
@@ -835,6 +836,37 @@ body.dark-mode .theme-toggle{
 
 .destaque strong{
     color:#020617;
+}
+
+/* calculadora celular */
+
+@media (max-width: 768px){
+
+    .calculadora{
+        padding: 70px 20px;
+    }
+
+    .calculadora-container{
+        flex-direction: column;
+    }
+
+    .calculadora-card{
+        width: 100%;
+        padding: 25px;
+    }
+
+    .resultado{
+        gap: 12px;
+    }
+
+    .resultado-item{
+        padding: 18px;
+    }
+
+    .resultado-item strong{
+        font-size: 1.8rem;
+    }
+
 }
 
 /* dark mode calculadora */
@@ -893,3 +925,4 @@ body.dark-mode .resultado-item strong{
 body.dark-mode .calculadora-card button:hover{
     background-color: #c8b34e;
 }
+
