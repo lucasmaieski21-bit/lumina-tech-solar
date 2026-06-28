@@ -1,16 +1,21 @@
 /* RESET */
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 /* CONFIG DA PÁGINA */
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #F8FAFC;
     color: #0F172A;
 }
+
 /* HEADER */
+
 .header{
     background-color: #020617;
     display: flex;
@@ -21,7 +26,9 @@ body{
     top: 0;
     z-index: 999;
 }
+
 /* LOGO */
+
 .logo{
     display: flex;
     align-items: center;
@@ -47,7 +54,9 @@ body{
     font-weight: 600;
     letter-spacing: 2px;
 }
+
 /* MENU */
+
 .navbar{
     display: flex;
     gap: 35px;
@@ -61,7 +70,9 @@ body{
 .navbar a:hover{
     color: #D6C15A;
 }
+
 /* HERO */
+
 .hero{
     background:linear-gradient(rgba(2, 6, 23, 0.68), rgba(2, 6, 23, 0.58)),url("imagem solar.png");
     background-size: cover;
@@ -89,7 +100,9 @@ body{
     font-size: 18px;
     line-height: 1.5;
 }
+
 /* BOTÕES HERO */
+
 .hero-buttons{
     display: flex;
     gap: 20px;
@@ -121,7 +134,9 @@ body{
 .btn-secondary:hover{
     background-color: rgba(255,255,255,0.08);
 }
+
 /* CARDS HERO */
+
 .hero-info{
     display: flex;
     gap: 25px;
@@ -145,7 +160,9 @@ body{
     color: white;
     font-size: 14px;
 }
+
 /* BENEFÍCIOS */
+
 .beneficios{
     padding: 100px 80px 180px;
     background-color: #F8FAFC;
@@ -174,7 +191,9 @@ body{
     line-height: 1.7;
     font-size: 18px;
 }
+
 /* GRID BENEFÍCIOS */
+
 .beneficios-grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -203,7 +222,9 @@ body{
     line-height: 1.8;
     font-size: 17px;
 }
+
 /* SOBRE */
+
 .sobre{
     padding: 100px 80px 220px;
     background-color: #020617;
@@ -278,7 +299,20 @@ body{
 .visual-card p{
     color: #CBD5E1;
 }
+
+#btn-acordeao{
+    cursor:pointer;
+    user-select:none;
+}
+
+#conteudo-acordeao{
+    overflow:hidden;
+    max-height:0;
+    transition:max-height .4s ease;
+}
+
 /* status sobre */
+
 .sobre-stats{
     display: flex;
     gap: 25px;
@@ -303,13 +337,15 @@ body{
     color: #CBD5E1;
     font-size: 15px;
 }
+
 /* CONTATO */
+
 .contato{
     padding: 70px 80px 120px;
     background: #EEF2FF;;
     border-top-left-radius: 60px;
     border-top-right-radius: 60px;
-    margin-top: -120px;
+    margin-top: -60;
     position: relative;
     z-index: 3;
 }
@@ -416,7 +452,9 @@ body{
     color: #020617;
     margin-bottom: -10px;
 }
+
 /* footer */
+
 .footer{
     background:linear-gradient(180deg, #071022, #020617);
     padding: 90px 80px 30px;
@@ -556,4 +594,302 @@ body{
         padding-left: 30px;
         padding-right: 30px;
     }
+}
+
+/* botao dark mode */
+
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 48px;
+    height: 22px;
+    background-color: #d9d9d9;
+    border-radius: 50px;
+    padding: 2px;
+    text-decoration: none;
+    margin-top: -2px;
+    position: relative;
+}
+
+.slider {
+    width: 18px;
+    height: 18px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    transition: 0,3;
+    right: 2px;
+    flex-shrink: 0;
+}
+
+/* Dark mode */
+
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+body.dark-mode .beneficios,
+body.dark-mode .contato {
+    background: #121212;
+}
+
+body.dark-mode .sobre {
+    background: #0b1120;
+}
+
+body.dark-mode .footer {
+    background: #020617;
+}
+
+body.dark-mode .contato-form {
+    background-color: #1E293B;
+}
+
+body.dark-mode .contato-form input,
+body.dark-mode .contato-form textarea {
+    background-color: #334155;
+    color: white;
+    border: 1px solid #475569;
+}
+
+body.dark-mode .contato-form label {
+    color: white;
+}
+
+body.dark-mode .beneficios-card,
+body.dark-mode .contato-form,
+body.dark-mode .contato-beneficios,
+body.dark-mode .stat-box,
+body.dark-mode .info-card,
+body.dark-mode .visual-card {
+    background: #1E293B;
+    color: white;
+}
+
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode strong {
+    color: white;
+}
+
+body.dark-mode p,
+body.dark-mode span,
+body.dark-mode label {
+    color: #CBD5E1;
+}
+
+body.dark-mode .slider{
+    transform:translateX(-26px);
+}
+
+body.dark-mode .theme-toggle{
+    background: #334155;
+}
+
+/* calculadora */
+
+.calculadora{
+    padding:100px 80px;
+    background:#F8FAFC;
+}
+
+.calculadora-container{
+    max-width:800px;
+    margin:0 auto;
+}
+
+.calculadora-texto{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.calculadora-texto h2{
+    font-size:42px;
+    margin-bottom:18px;
+    color:#020617;
+}
+
+.calculadora-texto p{
+    font-size:18px;
+    color:#64748B;
+    line-height:1.7;
+    max-width:600px;
+    margin:0 auto;
+}
+
+.calculadora-card{
+    background:white;
+    padding:45px;
+    border-radius:24px;
+    box-shadow:0 15px 40px rgba(2,6,23,.08);
+}
+
+.calculadora-card input{
+    width:100%;
+    padding:16px;
+    border:1px solid #CBD5E1;
+    border-radius:12px;
+    margin:15px 0 25px;
+    font-size:16px;
+}
+
+.calculadora-card button{
+    width:100%;
+    padding:16px;
+    border:none;
+    border-radius:12px;
+    background:#D6C15A;
+    color:#020617;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.calculadora-card button:hover{
+    transform:translateY(-2px);
+    background:#c8b34e;
+}
+
+.calculadora{
+    padding:100px 80px 120px;
+    background:#F8FAFC;
+    border-top-left-radius:60px;
+    border-top-right-radius:60px;
+    margin-top:-60px;
+    position:relative;
+    z-index:2;
+}
+
+.calculadora-card label{
+    display:block;
+    font-weight:600;
+    color:#020617;
+    margin-bottom:10px;
+}
+
+.calculadora-card input{
+    width:100%;
+    padding:16px 20px;
+    border:1px solid #CBD5E1;
+    border-radius:14px;
+    font-size:16px;
+    outline:none;
+    transition:.3s;
+    margin-bottom:20px;
+}
+
+.calculadora-card input:focus{
+    border-color:#D6C15A;
+    box-shadow:0 0 0 4px rgba(214,193,90,.15);
+}
+
+.calculadora-card button{
+    width:100%;
+    padding:16px;
+    background:#D6C15A;
+    color:#020617;
+    border:none;
+    border-radius:14px;
+    font-size:17px;
+    font-weight:700;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.calculadora-card button:hover{
+    transform:translateY(-2px);
+    box-shadow:0 10px 20px rgba(214,193,90,.3);
+}
+
+.resultado{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:18px;
+    margin-top:35px;
+}
+
+.resultado-item{
+    background:#F8FAFC;
+    border-radius:16px;
+    padding:22px;
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+
+.resultado-item span{
+    color:#64748B;
+    font-size:15px;
+}
+
+.resultado-item strong{
+    font-size:28px;
+    color:#020617;
+}
+
+.destaque{
+    background:#F8FAFC;
+}
+
+.destaque strong{
+    color:#020617;
+}
+
+/* dark mode calculadora */
+
+body.dark-mode .calculadora{
+    background-color: #0F172A;
+}
+
+body.dark-mode .calculadora-texto h2{
+    color: #F8FAFC;
+}
+
+body.dark-mode .calculadora-texto p{
+    color: #CBD5E1;
+}
+
+body.dark-mode .calculadora-card{
+    background-color: #1E293B;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.35);
+}
+
+body.dark-mode .calculadora-card label{
+    color: #F8FAFC;
+}
+
+body.dark-mode .calculadora-card input{
+    background-color: #0F172A;
+    color: #F8FAFC;
+    border: 1px solid #475569;
+}
+
+body.dark-mode .calculadora-card input::placeholder{
+    color: #94A3B8;
+}
+
+body.dark-mode .calculadora-card input:focus{
+    border-color: #D6C15A;
+    box-shadow: 0 0 0 4px rgba(214,193,90,.15);
+}
+
+body.dark-mode .resultado-item{
+    background-color: #334155;
+}
+
+body.dark-mode .resultado-item span{
+    color: #CBD5E1;
+}
+
+body.dark-mode .resultado-item strong{
+    color: #F8FAFC;
+}
+
+
+/* Botão continua amarelo, mas muda o hover */
+
+body.dark-mode .calculadora-card button:hover{
+    background-color: #c8b34e;
 }

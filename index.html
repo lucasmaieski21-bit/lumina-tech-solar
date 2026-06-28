@@ -23,6 +23,10 @@
             <a href="#beneficios">Benefícios</a>
             <a href="#tecnologia">Tecnologia</a>
             <a href="#">Contato</a>
+            <a href="#" id="theme-toggle" class="theme-toggle">
+                <span class="icon">☀️</span>
+                <span class="slider"></span>
+            </a>
         </nav>
 
     </header>
@@ -34,7 +38,7 @@
             <p>Reduza sua conta de luz com tecnologia solar moderna e monitoramento inteligente pelo aplicativo.</p>
             <div class="hero-buttons">
 
-                <button class="btn-primary">
+                <button id="btn-orcamento" class="btn-primary">
                     Solicitar Orçamento
                 </button>
                 <button class="btn-secondary">
@@ -101,11 +105,17 @@
             <div class="sobre-right">
                  <div class="sobre-visual">
                     <img src="imagem 2 site.jpeg" alt="Energia solar">
-                 <div class="visual-card">
-                 <h3>Monitoramento inteligente</h3>
-                 <p>Controle geração, cosnumo e economia diretamente pelo aplicativo</p>
-        </div>
+           <div class="visual-card">
+    <h3 id="btn-acordeao">
+        Monitoramento inteligente ▼
+    </h3>
+    <div id="conteudo-acordeao">
+        <p>
+            Controle geração, consumo e economia diretamente pelo aplicativo.
+            Acompanhe dados em tempo real, relatórios completos e desempenho dos painéis solares.
+        </p>
     </div>
+</div>
 
     <div class=sobre-stats>
     <div class="stat-box">
@@ -120,6 +130,49 @@
     </div>
   </div>
 </div>    
+</section>
+
+<!--calculadora-->
+
+<section class="calculadora" id="calculadora">
+    <div class="calculadora-container">
+        <div class="calculadora-texto">
+            <h2>Simule sua economia</h2>
+            <p>Descubra quanto você pode economizar utilizando energia solar.
+               Faça uma simulação rápida e gratuita.
+            </p>
+        </div>
+        <div class="calculadora-card">
+            <label for="valorConta">
+                Valor da sua conta de energia (R$)
+            </label>
+            <input
+                type="number"
+                id="valorConta"
+                placeholder="Ex: 350">
+            <button id="btn-calcular">
+                Calcular Economia
+            </button>
+            <div class="resultado" id="resultado">
+    <div class="resultado-item">
+        <span>Conta Atual</span>
+        <strong id="contaAtual">R$ 0,00</strong>
+    </div>
+    <div class="resultado-item">
+        <span>Nova Conta</span>
+        <strong id="novaConta">R$ 0,00</strong>
+    </div>
+            <div class="resultado-item">
+            <span>Economia Mensal</span>
+            <strong id="economiaMensal">R$ 0,00</strong>
+            </div>
+                <div class="resultado-item destaque">
+                    <span>Economia Anual</span>
+                    <strong id="economiaAnual">R$ 0,00</strong>
+                </div>
+             </div>
+        </div>
+    </div>
 </section>
 
 <!--contato-->
@@ -156,15 +209,15 @@
                 </div>
             </div>
         </div>
-       <form class="contato-form">
+       <form class="contato-form" id="formContato">
     <label>Nome completo</label>
-    <input type="text" placeholder="Digite seu nome">
+    <input type="text" id="nome" placeholder="Digite seu nome">
     <label>E-mail para contato</label>
-    <input type="email" placeholder="E-mail para contato">
+    <input type="email" id="email" placeholder="E-mail para contato">
     <label>Telefone / WhatsApp</label>
-    <input type="text" placeholder="Telefone">
+    <input type="text" id="telefone" placeholder="Telefone">
     <label>Conte um pouco sobre seu projeto</label>
-    <textarea placeholder="Descreva o que você procura em energia solar..."></textarea>
+    <textarea id="mensagem" placeholder="Descreva o que você procura em energia solar..."></textarea>
     <button class="btn-primary">
         Enviar Solicitação
     </button>
@@ -215,5 +268,6 @@
     </div>
 </main>
 </footer>
+<script src="script.js"></script>
 </body>
 </html>
