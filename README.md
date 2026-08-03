@@ -25,10 +25,6 @@ A Lumina Tech Solar é uma empresa fictícia criada para um projeto acadêmico. 
 
 🔗 Site: https://lucasmaieski21-bit.github.io/lumina-tech-solar/
 
-## 📷 Capturas de tela
-
-*(adicione 2 ou 3 imagens do site)*
-
 ## 👨‍💻 Autor
 
 Lucas Alexandre
