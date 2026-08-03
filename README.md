@@ -1,24 +1,36 @@
-# Lumina Tech Solar
+# ☀️ Lumina Tech Solar
 
 Projeto acadêmico desenvolvido durante a graduação em Engenharia de Software.
 
-O objetivo do projeto foi criar um site institucional para uma empresa fictícia de energia solar, aplicando conceitos de desenvolvimento web e programação estudados em aula.
+## 📖 Sobre o projeto
 
-## Tecnologias utilizadas
+A Lumina Tech Solar é uma empresa fictícia criada para um projeto acadêmico. O objetivo foi desenvolver um site institucional aplicando conceitos de desenvolvimento web e programação aprendidos durante a graduação.
 
-* HTML5
-* CSS3
-* Java
+## 🚀 Tecnologias utilizadas
 
-## Funcionalidades
+- HTML5
+- CSS3
+- Java
+- Git
+- GitHub
 
-* Página inicial institucional
-* Layout responsivo
-* Interface moderna
-* Estrutura organizada para navegação
+## ✨ Funcionalidades
 
-## Acesso
+- Página inicial institucional
+- Layout responsivo
+- Navegação intuitiva
+- Interface moderna
+
+## 🌐 Acesse o projeto
 
 🔗 Site: https://lucasmaieski21-bit.github.io/lumina-tech-solar/
 
-💻 Código-fonte disponível neste repositório.
+## 📷 Capturas de tela
+
+*(adicione 2 ou 3 imagens do site)*
+
+## 👨‍💻 Autor
+
+Lucas Alexandre
+
+
