@@ -19,6 +19,6 @@ O objetivo do projeto foi criar um site institucional para uma empresa fictícia
 
 ## Acesso
 
-🔗 Site: (cole aqui o link)
+🔗 Site: https://lucasmaieski21-bit.github.io/lumina-tech-solar/
 
 💻 Código-fonte disponível neste repositório.
